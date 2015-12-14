@@ -26,7 +26,7 @@ class local_cohortenrol_external extends external_api {
     $insertids[] = (array)$d;
     }
 
-    shell_exec('php /var/www/html/test_eufh_elearning_moodle/enrol/cohort/cli/sync.php');	
+   	
 
     return $insertids;
     }
