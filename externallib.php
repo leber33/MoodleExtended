@@ -25,8 +25,8 @@ class local_cohortenrol_external extends external_api {
     unset($record);
     $insertids[] = (array)$d;
     }
-
-   	
+    $cmd = "php " .  $CFG ->dirroot . "/enrol/cohort/cli/sync.php";
+    shell_exec($cmd);
 
     return $insertids;
     }
